@@ -55,6 +55,6 @@ else:
 
 
 ### Output:
-
+![Screenshot 2024-10-08 133840](https://github.com/user-attachments/assets/3c301118-f342-4c5c-bc00-fa400eb2560d)
 ### Result:
 Thus, a program to check palindrome has been written and test cases have been written and verified successfully.
