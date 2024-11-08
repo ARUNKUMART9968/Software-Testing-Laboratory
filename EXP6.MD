@@ -1,9 +1,9 @@
-# Ex.No: 6 To check whether the string is Palindrome and generate test cases.
+# Ex.No: 7 Sorting. 
 
-### DATE: 17/09/2024                                                                          
+### DATE: 24/09/2024                                                                          
 ### REGISTER NUMBER :  212222040017
 ### AIM: 
-Write a Python program to check whether the string is Palindrome and generate test cases. 
+Write a python program for sorting and inspect for failures. 
 ### Algorithm:
 1. Start
 2. Get an input from the user by prompting 
@@ -14,33 +14,23 @@ Write a Python program to check whether the string is Palindrome and generate te
 7. Stop the program.
 ### Program:
 ```
-def Palindrome(string): 
-    for i in range(0, int(len(string)/2)): 
-        if string[i] != string[len(string)-i-1]: 
-            return False 
-    return True 
-
-# Take input from the user
-s = input("Enter a string: ") 
-
-# Check if the input contains only alphabetic characters
-c = 1 
-for i in s: 
-    if not i.isalpha(): 
-        c = 0 
-        break # No need to continue checking if we found a non-alphabetic character
-
-if c == 0: 
-    print("Enter a valid string") 
-else: 
-    # Convert the string to lowercase to handle case-insensitivity
-    s = s.lower() 
-    answer = Palindrome(s) 
-    
-    if answer: 
-        print("The given string is a palindrome") 
-    else: 
-        print("The given string is not a palindrome")
+ n=int(input("Enter the number of elements:"))  
+arr=[]  
+try:  
+     for i in range(n):  
+        a=float(input("Enter the element:"))  
+        arr.append(a)  
+        for i in range(n):  
+            for j in range(n):  
+                if(arr[i]<arr[j): 
+                              temp = arr[i] 
+                              arr[i] = arr[j] 
+                              arr[j] = temp 
+    print(“The array after sorting: ”) 
+ for i in range(n): 
+     print(arr[i],end=’ ’) 
+except ValueError: 
+    print(“Enter a valid number”) 
 ```
 
 
