@@ -1,5 +1,5 @@
 # Ex.No: 5 Binary Search.
-### DATE: 01-10-24                                                                       
+### DATE: 10-09-24                                                                       
 ### REGISTER NUMBER : 212222040017
 
 ### AIM: 
